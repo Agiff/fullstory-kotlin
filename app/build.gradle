@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'fullstory'
 
 android {
     namespace 'com.devhaus.fullstorypoc'
@@ -58,4 +59,12 @@ dependencies {
 Properties properties = new Properties()
 if (project.rootProject.file('local.properties').canRead()) {
     properties.load(project.rootProject.file("local.properties").newDataInputStream())
+}
+
+fullstory {
+    org 'o-1H82NX-na1'
+    enabledVariants 'all'
+    recordOnStart true
+    // more of FullStory's configuration options can be found here:
+    // https://help.fullstory.com/hc/en-us/articles/360052419133#01GRMBN5AJX35AMF74DTQS904B
 }
