@@ -54,6 +54,10 @@ dependencies {
     testImplementation "junit:junit:$rootProject.junit_version"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.test_ext_junit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso_version"
+
+    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
 }
 
 Properties properties = new Properties()

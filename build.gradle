@@ -25,6 +25,8 @@ buildscript {
         google()
         mavenCentral()
         maven { url "https://maven.fullstory.com" }
+        jcenter()
+        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$gradle_version"
